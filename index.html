@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>🎃 Hallodex 👻</title>
 
-  <!-- Fuentes -->
-  <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Fuente espeluznante -->
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
 
   <style>
     body {
@@ -22,32 +22,29 @@
 
     /* ---- TÍTULO ---- */
     h1 {
-      font-size: 4.5em;
+      font-size: 4.2em;
       margin-bottom: 50px;
-      color: #fff;
+      color: #ffffff;
       text-shadow:
-        0 0 10px #ffffff,
-        0 0 20px #ff6600,
-        0 0 40px #ff3300,
-        0 0 80px #ff2200;
-      animation: brillo 2s infinite ease-in-out;
+        0 0 4px #ff9933,
+        0 0 10px rgba(255, 153, 51, 0.3),
+        0 0 20px rgba(255, 102, 0, 0.2);
       letter-spacing: 6px;
+      animation: suave 4s infinite ease-in-out;
     }
 
-    @keyframes brillo {
+    @keyframes suave {
       0%, 100% {
         text-shadow:
-          0 0 10px #ffffff,
-          0 0 20px #ff9900,
-          0 0 40px #ff6600,
-          0 0 80px #ff3300;
+          0 0 4px #ff9933,
+          0 0 10px rgba(255, 153, 51, 0.3),
+          0 0 20px rgba(255, 102, 0, 0.2);
       }
       50% {
         text-shadow:
-          0 0 5px #ffffff,
-          0 0 15px #ffaa33,
-          0 0 30px #ff6600,
-          0 0 60px #ff3300;
+          0 0 3px #ff6600,
+          0 0 8px rgba(255, 120, 0, 0.3),
+          0 0 16px rgba(255, 80, 0, 0.2);
       }
     }
 
@@ -60,7 +57,7 @@
     }
 
     li {
-      background: rgba(255, 120, 0, 0.12);
+      background: rgba(255, 120, 0, 0.08);
       margin: 15px 0;
       padding: 15px 25px;
       border-radius: 12px;
@@ -68,28 +65,26 @@
       letter-spacing: 1px;
       color: #fff7e6;
       text-shadow:
-        0 0 6px #ffa64d,
-        0 0 12px #ff6600,
-        0 0 22px #ff3300;
-      border: 2px solid rgba(255, 140, 0, 0.6);
+        0 0 4px #ff8800,
+        0 0 10px rgba(255, 136, 0, 0.4);
+      border: 1.8px solid rgba(255, 136, 0, 0.4);
       transition: all 0.3s ease;
     }
 
     li:hover {
-      transform: scale(1.07);
-      background: rgba(255, 120, 0, 0.25);
-      box-shadow: 0 0 25px #ff6600;
+      transform: scale(1.05);
+      background: rgba(255, 120, 0, 0.15);
+      box-shadow: 0 0 15px rgba(255, 120, 0, 0.4);
       text-shadow:
-        0 0 10px #fff3e6,
-        0 0 20px #ff9900,
-        0 0 40px #ff3300;
+        0 0 6px #ffb366,
+        0 0 14px #ff6600;
     }
 
-    /* ---- EMOJIS DECORATIVOS ---- */
+    /* ---- EMOJIS ---- */
     .decor {
-      font-size: 2em;
+      font-size: 1.8em;
       animation: flotar 3s ease-in-out infinite;
-      filter: drop-shadow(0 0 10px #ff6600);
+      filter: drop-shadow(0 0 6px rgba(255, 140, 0, 0.5));
     }
 
     @keyframes flotar {
@@ -97,7 +92,7 @@
         transform: translateY(0);
       }
       50% {
-        transform: translateY(-10px);
+        transform: translateY(-8px);
       }
     }
 
