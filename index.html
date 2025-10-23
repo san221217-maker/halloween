@@ -1,64 +1,100 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>👻 Fiesta de Halloween 🎃</title>
-
-  <!-- Fuente espeluznante -->
+  <title>🎃 HALLODEX 👻</title>
   <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
 
   <style>
+    /* Fondo animado */
     body {
-      background-color: #000;
-      color: #ffffff;
+      margin: 0;
       font-family: 'Creepster', cursive;
+      color: #fff;
+      background: radial-gradient(circle at center, #000 0%, #1a0000 70%);
+      overflow-x: hidden;
+      animation: fondo 10s ease-in-out infinite alternate;
       text-align: center;
-      padding: 50px;
+      padding-bottom: 100px;
     }
 
+    @keyframes fondo {
+      0% { background-color: #000; }
+      100% { background-color: #190000; }
+    }
+
+    /* Título principal */
     h1 {
-      font-size: 4em;
-      color: #ff6600;
-      text-shadow: 3px 3px 10px #000;
-      animation: parpadeo 1.5s infinite;
+      font-size: 5em;
+      margin-top: 40px;
+      text-shadow: 0 0 30px #ff6600, 0 0 60px #ff3300;
+      animation: brillo 2s infinite alternate;
+      letter-spacing: 4px;
     }
 
-    @keyframes parpadeo {
-      0%, 100% {
-        opacity: 1;
-      }
-
-      50% {
-        opacity: 0.6;
-      }
+    @keyframes brillo {
+      from { text-shadow: 0 0 20px #ff6600; }
+      to { text-shadow: 0 0 40px #ff3300, 0 0 80px #ff3300; }
     }
 
+    /* Lista */
     ul {
       list-style: none;
       padding: 0;
-      font-size: 2em;
+      max-width: 800px;
+      margin: 50px auto;
     }
 
     li {
-      background-color: rgba(30, 30, 30, 0.9);
-      margin: 15px auto;
-      padding: 15px;
+      background: rgba(30, 30, 30, 0.85);
+      margin: 10px auto;
+      padding: 15px 25px;
       border-radius: 15px;
-      width: 60%;
-      box-shadow: 0 0 20px #ff6600;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      font-size: 1.8em;
+      box-shadow: 0 0 10px #ff6600;
+      transition: all 0.3s ease;
+      backdrop-filter: blur(4px);
     }
 
     li:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 30px #ff3300;
+      transform: scale(1.07) rotate(1deg);
+      background: rgba(255, 80, 0, 0.2);
+      box-shadow: 0 0 25px #ff3300, inset 0 0 10px #ff6600;
+    }
+
+    /* Efecto de niebla animada */
+    .fog {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 200%;
+      height: 200%;
+      background: url('https://i.ibb.co/bPFX2kk/fog-texture.png') repeat;
+      opacity: 0.08;
+      animation: moverNiebla 60s linear infinite;
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    @keyframes moverNiebla {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+
+    /* Footer decorativo */
+    footer {
+      font-size: 1.5em;
+      margin-top: 40px;
+      color: #ff6600;
+      text-shadow: 0 0 20px #ff3300;
+      letter-spacing: 2px;
     }
   </style>
 </head>
-
 <body>
+  <div class="fog"></div>
+  
   <h1>🎃 HALLODEX 👻</h1>
 
   <ul>
@@ -74,9 +110,9 @@
     <li>Edgar Osvaldo Ortiz Valle 010 </li>
     <li>Isabella Frias 011 </li>
     <li>Rodrigo Romero 012 </li>
-     <li>Santiago Romero 013 </li>
-     <li>Jared Márquez 014 </li>
-    <li>Aaron Zúñiga  015 </li>
+    <li>Santiago Romero 013 </li>
+    <li>Jared Márquez 014 </li>
+    <li>Aaron Zúñiga 015 </li>
     <li>Yareni Roman 016 </li>
     <li>Fernanda Partida 017 </li>
     <li>Sergio Bautista 018 </li>
@@ -100,8 +136,8 @@
     <li>Samantha </li>
     <li>Brayan 038 </li>
     <li>Ale 039 </li>
-     <li>Aurora 040 </li>
-     <li>Tania Lopez 041 </li>
+    <li>Aurora 040 </li>
+    <li>Tania Lopez 041 </li>
     <li>Andrea Jacome 042 </li>
     <li>Gabriela Macip 043 </li>
     <li>Sofia Gutierrez 044 </li>
@@ -135,23 +171,11 @@
     <li>Nirvana Perez 072 </li>
     <li>Laura Jimena 073 </li>
     <li>Diego Rodriguez 074 </li>
-   <li>Alonso Hernandez 075 </li>
+    <li>Alonso Hernandez 075 </li>
     <li>Jair Canchola 076 </li>
     <li>Rebeca Valenzuela 077 </li>
-    
-    
-    
-
-    
   </ul>
+
+  <footer>👻 ¡Prepárate para la noche más aterradora y divertida del año! 🎶💀</footer>
 </body>
-
 </html>
-
-
-
-
-
-
-
-
