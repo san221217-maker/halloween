@@ -22,32 +22,32 @@
 
     /* ---- TÍTULO ---- */
     h1 {
-      font-size: 4em;
+      font-size: 4.5em;
       margin-bottom: 50px;
-      color: #ff3cff;
+      color: #fff;
       text-shadow:
-        0 0 10px #ff00ff,
-        0 0 20px #ff00ff,
-        0 0 40px #ff00ff,
-        0 0 80px #ff0088;
-      animation: pulso 2s infinite;
-      letter-spacing: 5px;
+        0 0 10px #ffffff,
+        0 0 20px #ff6600,
+        0 0 40px #ff3300,
+        0 0 80px #ff2200;
+      animation: brillo 2s infinite ease-in-out;
+      letter-spacing: 6px;
     }
 
-    @keyframes pulso {
+    @keyframes brillo {
       0%, 100% {
         text-shadow:
-          0 0 10px #ff00ff,
-          0 0 20px #ff00ff,
-          0 0 40px #ff00ff,
-          0 0 80px #ff0088;
+          0 0 10px #ffffff,
+          0 0 20px #ff9900,
+          0 0 40px #ff6600,
+          0 0 80px #ff3300;
       }
       50% {
         text-shadow:
-          0 0 5px #ff66ff,
-          0 0 15px #ff33ff,
-          0 0 30px #ff33ff,
-          0 0 60px #ff00ff;
+          0 0 5px #ffffff,
+          0 0 15px #ffaa33,
+          0 0 30px #ff6600,
+          0 0 60px #ff3300;
       }
     }
 
@@ -60,7 +60,7 @@
     }
 
     li {
-      background: rgba(255, 100, 0, 0.1);
+      background: rgba(255, 120, 0, 0.12);
       margin: 15px 0;
       padding: 15px 25px;
       border-radius: 12px;
@@ -68,16 +68,16 @@
       letter-spacing: 1px;
       color: #fff7e6;
       text-shadow:
-        0 0 5px #ffa64d,
-        0 0 10px #ff6600,
-        0 0 20px #ff3300;
+        0 0 6px #ffa64d,
+        0 0 12px #ff6600,
+        0 0 22px #ff3300;
       border: 2px solid rgba(255, 140, 0, 0.6);
       transition: all 0.3s ease;
     }
 
     li:hover {
       transform: scale(1.07);
-      background: rgba(255, 90, 0, 0.25);
+      background: rgba(255, 120, 0, 0.25);
       box-shadow: 0 0 25px #ff6600;
       text-shadow:
         0 0 10px #fff3e6,
@@ -89,6 +89,7 @@
     .decor {
       font-size: 2em;
       animation: flotar 3s ease-in-out infinite;
+      filter: drop-shadow(0 0 10px #ff6600);
     }
 
     @keyframes flotar {
